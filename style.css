@@ -3,6 +3,21 @@
   padding: 0px;
   box-sizing: border-box;
 }
+:root {
+  --bg-dark: rgba(0, 0, 0, 0.88);
+  --bg-blue: rgba(87, 184, 255, 1);
+  --text-light: rgba(255, 255, 255, 1);
+  --text-yellow: rgba(250, 196, 34, 1);
+  --text-grey: rgba(153, 153, 153, 1);  
+  --bg-black: rgba(0, 0, 0, 1);
+  --bg-shrink: brown;
+}
+.dark {
+  --bg-dark: rgba(87, 184, 255, 1);
+  --bg-black: rgb(20, 19, 19);
+  --bg-blue: rgba(253, 8, 8, 0.88);
+  --text-light: rgb(255, 255, 255);
+} 
 html,body{
   background-color: black;
 }
@@ -26,6 +41,13 @@ nav {
   padding: 20px 0;
   gap: 30px;
 }
+#hamburger {
+  color: var(--text-light);
+  font-size: 40px;
+  display: flex;
+  display: none;
+  /* display: flex; */
+}
 .another {
   background-image: linear-gradient(
   to right,
@@ -37,7 +59,7 @@ header {
   font-family: "Orbitron", sans-serif;
 }
 .hibek {
-  color: rgba(255, 255, 255, 1);
+  color: var(--text-light);
   font-family: Orbitron;
   font-weight: 400;
   font-size: 18px;
@@ -50,11 +72,11 @@ header {
   display: inline-block;
 }
 .menu_link:hover {
-  color: rgba(250, 196, 34, 1);
+  color:var(--text-yellow);
   transition: 0.5s;
 }
 .menu_link {
-  color: rgba(255, 255, 255, 1);
+  color: var(--text-light);
   font-family: Orbitron;
   font-weight: 400;
   font-size: 16px;
@@ -69,12 +91,9 @@ header {
 .site_moon {
   display: flex;
   gap: 24px;
+  /* display: none; */
 }
-#hamburger {
-  color: #ffffff;
-  font-size: 25px;
-  display: none;
-}
+
 .zorkubro {
   font-family: Orbitron;
   font-weight: 400;
@@ -82,7 +101,7 @@ header {
   line-height: 16px;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: rgba(87, 184, 255, 1);
+  color:var(--bg-blue);
 }
 .aya {
   display: flex;
@@ -102,13 +121,13 @@ header {
   margin: 20px 0;
 }
 .section_h {
-  color: rgba(255, 255, 255, 1);
+  color: var(--text-light);
 }
 .color {
   background-image: linear-gradient(
   to right,
-  rgba(0, 0, 0, 1) 50%,
-  rgba(87, 184, 255, 1) 50%
+  var(--bg-black) 50%,
+  var(--bg-blue) 50%
   );
   display: flex;
 }
@@ -123,7 +142,7 @@ header {
   line-height: 32px;
   letter-spacing: 0%;
   
-  color: #dfdfdfcc;
+  color:var(--text-grey);
 }
 .btn-p {
   color: rgba(255, 255, 255, 1);
@@ -135,7 +154,7 @@ header {
   line-height: 28px;
   letter-spacing: 0%;
   text-transform: capitalize;
-  background-color: rgba(87, 184, 255, 1);
+  background-color: var(--bg-blue);
   cursor: pointer;
   width: auto;
   display: inline-block;
@@ -152,7 +171,7 @@ header {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0%;
-  color: rgba(255, 255, 255, 1);
+  color: var(--text-light);
   gap: 50px;
 }
 .color .rasm{
@@ -163,7 +182,7 @@ header {
   width: 100%;
 }
 .yellow_place {
-  background-color: rgba(253, 208, 74, 1);
+  background-color:var(--text-yellow);
 }
 .yellow_h {
   display: flex;
@@ -181,7 +200,7 @@ header {
   line-height: 26px;
   letter-spacing: 0%;
   text-align: center;
-  color: rgba(85, 85, 85, 1);
+  color:var(--text-grey);
 }
 .yellow_logo {
   display: flex;
@@ -208,7 +227,7 @@ header {
   font-size: 72px;
   line-height: 86px;
   letter-spacing: 0%;
-  color: #ffffff;
+  color:var(--text-light);
   text-transform: capitalize;
   display: flex;
   text-align: center;
@@ -223,7 +242,7 @@ header {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-  color: #57b8ff;
+  color:var(--bg-blue);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -232,7 +251,7 @@ header {
   
 }
 .akabek{
-  background-color: black;
+  background-color: var(--bg-black);
   
   font-family: Orbitron;
   font-weight: 400;
@@ -240,7 +259,7 @@ header {
   line-height: 16px;
   letter-spacing: 0%;
   text-transform: uppercase;
-  color: #57B8FF;
+  color:var(--bg-blue);
   display: flex;
   align-items: center;
   gap: 14px;
@@ -253,7 +272,7 @@ header {
   line-height: 74px;
   letter-spacing: 0%;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: var(--text-light);
 }
 .gg{
   font-family: Orbitron;
@@ -261,7 +280,7 @@ header {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0%;
-  color: #DFDFDFCC;
+  color:var(--text-grey);
 }
 .hi{
   width: 492;
@@ -276,7 +295,7 @@ header {
   padding-right: 50px;
 }
 .cap_man {
-  background-color: rgba(0, 0, 0, 1);
+  background-color:var(--bg-black);
 }
 .birinchi {
   padding-bottom: 32px;
@@ -292,6 +311,7 @@ header {
   width: 100%;
   display: flex;
   text-align: center;
+  /* display: none; */
 }
 .kal{
   font-family: Orbitron;
@@ -300,7 +320,7 @@ header {
   line-height: 82px;
   letter-spacing: 0%;
   text-align: center;
-  color:#141820;
+  color:var(--bg-black);
   background-image: url(./images/sariqcha.svg);
 }
 .ak{
@@ -311,20 +331,134 @@ header {
   letter-spacing: 0%;
   text-align: center;
   padding-top: 90px;
-  color: #555555;
+  color: var(--text-grey);
+}
+.hibro{
+  color: rgba(255, 255, 255, 1);
+  padding: 21px 34px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+    line-height: 28px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color:var(--text-grey);
+  cursor: pointer;
+  width: auto;
+  display: inline-block;
+}
+.club-cards {
+  padding: 64px 0 87px;
+  display: flex;
+  gap: 24px;
+}
+.club-card_big {
+  width: 648px;
+}
+.card-big_footer {
+  padding: 54px 41px 0 0;
+}
+.card-big_footer h6 {
+  padding-bottom: 28px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: var(--bg-blue);
+}
+.card-big_footer h4 {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: var(--text-light);
 }
 
-/* media */
+.club-card_smalls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 24px;
+}
+.club-card_small {
+  width: 312px;
+}
+.card-small_footer {
+  padding: 30px 31px 0 0;
+}
+.card_small-footer h6 {
+  padding-bottom: 20px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color:var(--bg-blue)
+}
+.card_small-footer h4 {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: var(--text-light);
+}
+@media(max-width:1671){
+.mum{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.music_img{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+}
+@media (max-width: 1360px) {
+  .club-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .club-card_smalls {
+    justify-content: center;
+  }
+}
+@media(max-width:1335){
+  .last_page{
+    flex-wrap: wrap;
+  font-size: 500px;
+  }
 
+}
+/* media */
+@media(max-width:1335px){
+  .suvdekbul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .var{
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 @media (max-width:1031px) {
   nav {
     flex-wrap: wrap;
+    /* display: none; */
+  }
+  #hamburger {
+    display: block;
   }
   .site_menu {
     order: 1;
     margin-left: 50%;
     transform: translateX(-50%);
+    display: none;
   }
+
 }
 
 @media (max-width:1000px) {
@@ -339,7 +473,17 @@ header {
     line-height: 50px;
   }
 }
-
+@media (max-width: 678px) {
+  .card-big_header img {
+    width: 100%;
+  }
+}
+@media (max-width: 660px) {
+  .card-big_footer h4 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
 @media (max-width:550px) {
   .logo img {
     width: 100%;
@@ -350,7 +494,12 @@ header {
     transform: translateX(0);
   }
 }
-
+@media (max-width:460px) {
+  .suvdekbul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 @media (max-width:460px) {
   .bitta .button {
     flex-direction: column;
@@ -361,5 +510,29 @@ header {
   .section_h{
     font-size: 35px;
     line-height: 30px;
+  }
+}
+@media (max-width: 390px) {
+
+  .card-big_footer {
+    padding-right: 1px;
+  }
+}
+@media (max-width: 345px) {
+  .card_small-header img {
+    width: 100%;
+  }
+  .club-card_small {
+    width: 100%;
+  }
+  .card_small-footer h4 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 330px) {
+  .card-big_footer h4 {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
